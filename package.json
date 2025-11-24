@@ -1,0 +1,41 @@
+{
+  "name": "betty-task",
+  "description": "Infinite Image Carousel",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "SET NODE_ENV=production && webpack",
+    "preview": "serve dist -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.9.6",
+    "redux": "^5.0.1"
+  },
+  "devDependencies": {
+    "@reduxjs/toolkit": "^2.10.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "axios": "^1.13.2",
+    "css-loader": "^7.1.2",
+    "dotenv": "^17.2.3",
+    "html-webpack-plugin": "^5.6.4",
+    "sass": "^1.94.1",
+    "sass-loader": "^16.0.6",
+    "serve": "^14.2.5",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "license": "MIT",
+  "author": "Rumen Sechkov"
+}

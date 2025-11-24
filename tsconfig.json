@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["dom", "esnext"],
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "paths": {
+      "@api-calls/*": ["./src/api/calls/*/"],
+      "@api-client": ["./src/api/client"],
+      "@dispatch": ["./src/state/dispatch"],
+      "@state": ["./src/state/store"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@atoms/*": ["./src/components/atoms/*"],
+      "@molecules/*": ["./src/components/molecules/*"],
+      "@organisms/*": ["./src/components/organisms/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@types-api-calls/*": ["./src/api/calls/*/types"],
+      "@types-reducers": ["./src/state/reducers/types"],
+      "@types-reducers/*": ["./src/state/reducers/*/types"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
