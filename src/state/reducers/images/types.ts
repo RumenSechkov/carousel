@@ -5,7 +5,6 @@ type Image = PagedImage;
 
 type State = {
   data: Image[];
-  show: [number, number];
 };
 
 type Reducer = {

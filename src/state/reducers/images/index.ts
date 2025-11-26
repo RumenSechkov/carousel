@@ -2,7 +2,6 @@ import { State, Reducer } from './types';
 
 const initialState: State = {
   data: [],
-  show: [0, 3],
 };
 
 const manageState: Reducer = {
