@@ -1,14 +1,14 @@
 import { slices } from './slices';
 import { store } from './store';
-import { Actions, Slices, Dispatches } from './types';
+import { Actions, DispatchActions, Dispatches, Slices } from './types';
 
 const createDispatches = (actions: Actions) =>
-  Object.keys(actions).reduce(
-    (dispatches, key: keyof Actions) => ({
+  (Object.keys(actions) as (keyof typeof actions)[]).reduce(
+    (dispatches, key) => ({
       ...dispatches,
-      [key]: (payload: unknown) => store.dispatch(actions[key](payload)),
+      [key]: (payload: any) => store.dispatch(actions[key](payload)),
     }),
-    {},
+    {} as DispatchActions,
   );
 
 const dispatch = (Object.keys(slices) as (keyof typeof slices)[]).reduce(

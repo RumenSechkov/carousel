@@ -14,7 +14,7 @@ const ImagesPage = () => {
   useEffect(() => {
     !data.length &&
       getPagedImages().then((data) => {
-        if (data) (dispatch as any).images.setData(data);
+        if (data) dispatch.images.setData(data);
       });
   }, [data]);
 
